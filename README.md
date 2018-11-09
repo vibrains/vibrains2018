@@ -1,5 +1,4 @@
 <p align="center">
-  <img alt="Gatsby" src="./images/svg/logo.svg" width="60" />
   <h2 align="center">
     Built with GatsbyJS 🚀
   </h2>
