@@ -7,12 +7,12 @@ const IndexPage = (props) => (
   <Layout>
   <div className="work-wrapper">
 
-  <h3 className="headline">👨‍💻 Web Work</h3>
+  <h3 className="headline"><span role="img" aria-label="A man behind a computer screen, working in the field of technology.">👨‍💻</span> Web Work</h3>
   <div className="column">
-  <a href="https://malonelaw.com" target="_blank">
-  <Img style={{ maxHeight: "200px" }} fluid={props.data.malonelawThumb.childImageSharp.fluid} />
+  <a href="https://malonelaw.com" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.malonelawThumb.childImageSharp.fluid} />
   <div className="item-content">
-  <h3>Malone Law <i className="icon-link"></i></h3>
+  <h3>Malone Law</h3>
   <span className="tag">Design</span><span className="tag">Development</span><span className="tag">LEMP</span>
   <div className="agency">Agency: LMI</div>
   </div>
@@ -20,10 +20,10 @@ const IndexPage = (props) => (
   </div>
 
   <div className="column">
-  <a href="https://eatupdrinkup.net" target="_blank">
-  <Img style={{ maxHeight: "200px" }} fluid={props.data.upontheroofThumb.childImageSharp.fluid} />
+  <a href="https://eatupdrinkup.net" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.upontheroofThumb.childImageSharp.fluid} />
   <div className="item-content">
-  <h3>Up On The Roof <i className="icon-link"></i></h3>
+  <h3>Up On The Roof</h3>
   <span className="tag">Design</span><span className="tag">Development</span><span className="tag">LEMP</span>
   <div className="agency">Agency: LMI</div>
   </div>
@@ -31,10 +31,10 @@ const IndexPage = (props) => (
   </div>
 
   <div className="column">
-  <a href="https://homebaseinspectors.com" target="_blank">
-  <Img style={{ maxHeight: "200px" }} fluid={props.data.homebaseinspectorsThumb.childImageSharp.fluid} />
+  <a href="https://homebaseinspectors.com" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.homebaseinspectorsThumb.childImageSharp.fluid} />
   <div className="item-content">
-  <h3>Homebase Inspectors <i className="icon-link"></i></h3>
+  <h3>Homebase Inspectors</h3>
   <span className="tag">Design</span><span className="tag">Development</span><span className="tag">Branding</span><span className="tag">LEMP</span> 
   <div className="agency">Freelance</div>
   </div>
@@ -42,10 +42,21 @@ const IndexPage = (props) => (
   </div>
 
   <div className="column">
-  <a href="https://cakesbyjane.com" target="_blank">
-  <Img style={{ maxHeight: "200px" }} fluid={props.data.cakesbyjaneThumb.childImageSharp.fluid} />
+  <a href="https://funny-business.com/" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.funnybusinessThumb.childImageSharp.fluid} />
   <div className="item-content">
-  <h3>Cakes By Jane <i className="icon-link"></i></h3>
+  <h3>Funny Business</h3>
+  <span className="tag">Design</span><span className="tag">Development</span>
+  <div className="agency">Agency: The Wired Mouse</div>
+  </div>
+  </a>
+  </div>
+
+  <div className="column">
+  <a href="https://cakesbyjane.com" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.cakesbyjaneThumb.childImageSharp.fluid} />
+  <div className="item-content">
+  <h3>Cakes By Jane</h3>
   <span className="tag">Design</span><span className="tag">Development</span><span className="tag">LEMP</span> 
   <div className="agency">Agency: The Wired Mouse</div>
   </div>
@@ -53,12 +64,12 @@ const IndexPage = (props) => (
   </div>
 
   <div className="column">
-  <a href="https://telcoccu.org" target="_blank">
-  <Img style={{ maxHeight: "200px" }} fluid={props.data.telcoThumb.childImageSharp.fluid} />
+  <a href="https://www.pisgahlegal.org/" target="_blank" rel="noopener noreferrer">
+  <Img fluid={props.data.pisgahlegalThumb.childImageSharp.fluid} />
   <div className="item-content">
-  <h3>Telco Credit Union <i className="icon-link"></i></h3>
-  <span className="tag">Design</span><span className="tag">Development</span><span className="tag">Drupal</span> 
-  <div className="agency">Agency: The Wired Mouse</div>
+  <h3>Pisgah Legal Services</h3>
+  <span className="tag">Design</span><span className="tag">Development</span><span className="tag">LAMP</span> 
+  <div className="agency">Agency: Evolv</div>
   </div>
   </a>
   </div>
@@ -87,42 +98,72 @@ query {
   }
   malonelawThumb: file(relativePath: { eq: "malonelaw-thumb-blue.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }
   }
   upontheroofThumb: file(relativePath: { eq: "upontheroof-thumb.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }
   }
   homebaseinspectorsThumb: file(relativePath: { eq: "homebaseinspectors-thumb.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }
   }
   cakesbyjaneThumb: file(relativePath: { eq: "cakesbyjane-thumb.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }
   }
-  telcoThumb: file(relativePath: { eq: "telco-thumb.jpg" }) {
+  funnybusinessThumb: file(relativePath: { eq: "funnybusiness-thumb.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }
   }
-  htcThumb: file(relativePath: { eq: "htc-thumb.gif" }) {
+  pisgahlegalThumb: file(relativePath: { eq: "pisgahlegal-thumb.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight: 200, quality: 64) {
+      fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
         ...GatsbyImageSharpFluid
       }
     }

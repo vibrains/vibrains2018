@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 import './footer.scss'
 
 class Footer extends Component {
@@ -13,7 +12,7 @@ class Footer extends Component {
       <div className="notice-container">
       <h4>copyright</h4>
       <h4>
-      <a href="https://www.gatsbyjs.org/" target="_blank">
+      <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
       Site built with Gatsby
       </a>
       </h4>

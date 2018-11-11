@@ -21,11 +21,11 @@ const Header = ({ siteTitle }) => (
   <div className="welcome-text">
   <BlockRevealAnimation delay={0} duration={.6} color="#fff">
 
-  <h1 className="headline">Web <a className="decorated" target="_blank" href="https://github.com/vibrains">developer</a> and <a className="decorated" href="https://www.behance.net/vibrains"
-  target="_blank">designer</a></h1></BlockRevealAnimation><br />
+  <h1 className="headline">Web <a className="decorated" target="_blank" href="https://github.com/vibrains" rel="noopener noreferrer">developer</a> and <a className="decorated" href="https://www.behance.net/vibrains"
+  target="_blank" rel="noopener noreferrer">designer</a></h1></BlockRevealAnimation><br />
 
   <BlockRevealAnimation delay={.2} duration={.6} color="#fff">
-  <h1  className="headline">currently living in Atlanta, GA <span className="peach">🍑</span></h1>
+  <h1  className="headline">currently living in Atlanta, GA <span className="peach" role="img" aria-label="The fleshy, pinkish-orange fruit of the fuzzy peach, shown with green leaves and sometimes a stem.">🍑</span></h1>
   </BlockRevealAnimation>
   </div>
   <hr />
