@@ -225,6 +225,9 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+p.hidden {
+  display: none;
+}
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
