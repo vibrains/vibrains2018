@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import Fade from 'react-reveal/Fade'
 
 import Header from './header'
-import './layout.scss'
+import '../styles/layout.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery

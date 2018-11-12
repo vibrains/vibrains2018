@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './solar.scss'
+import '../styles/solar.scss'
 import BlockRevealAnimation from 'react-block-reveal-animation'
 
 const Header = ({ siteTitle }) => (
