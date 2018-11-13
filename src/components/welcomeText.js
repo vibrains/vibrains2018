@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import BlockRevealAnimation from 'react-block-reveal-animation'
+import React, { Component } from 'react';
+import BlockRevealAnimation from 'react-block-reveal-animation';
 
 class welcomeText extends Component {
   render() {

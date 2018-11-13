@@ -1,7 +1,7 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import Layout from '../components/layout'
-import BlockRevealAnimation from 'react-block-reveal-animation'
+import React from 'react';
+import Img from 'gatsby-image';
+import Layout from '../components/layout';
+import BlockRevealAnimation from 'react-block-reveal-animation';
 
 const IndexPage = (props) => (
   <Layout>

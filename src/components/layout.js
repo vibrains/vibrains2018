@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import Footer from '../components/footer'
-import Fade from 'react-reveal/Fade'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import Footer from '../components/footer';
+import Fade from 'react-reveal/Fade';
 
 import Header from './header'
 import '../styles/main.scss'
