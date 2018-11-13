@@ -65,7 +65,10 @@ a:active,
 a:hover {
   outline-width: 0;
 }
-
+@keyframes shift {
+  from {transform:translateX(0);}
+  to {transform:translateX(0);}
+}
 a.decorated {
   border-bottom: 2px solid $pink;
   color: #fff;
@@ -76,6 +79,7 @@ a.decorated {
   line-height: 0.85;
   &:hover {
     background-image: url("../images/svg/link-swiggle.svg");
+    animation: shift .3s linear infinite;
     background-position: 0 calc(100% - 1.5px);
     background-size: auto 3px;
     background-repeat: repeat-x;
@@ -86,7 +90,6 @@ a.decorated {
     color: #fff;
   }
 }
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
