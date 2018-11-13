@@ -6,9 +6,7 @@ const contact = () => (
 	<Layout>
 
   <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-  <p class="hidden">
-  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
+  <input type="hidden" name="contact" value="contact" />  
   <div>
   <input placeholder="Full Name" name="name" type="text" required />
   </div>
@@ -16,7 +14,7 @@ const contact = () => (
   <input placeholder="Email Address" name="email" type="email" required />
   </div>
   <div>
-  <textarea placeholder="Eg. Enter your messages here" name="message"></textarea>
+  <textarea placeholder="Message" name="message"></textarea>
   </div>
   <p>
   <button type="submit">Send</button>
