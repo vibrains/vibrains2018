@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 const contact = () => (
 	<Layout>
-  <div className="qfc-container">
+
   <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
   <p class="hidden">
   <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -22,7 +22,7 @@ const contact = () => (
   <button type="submit">Send</button>
   </p>
   </form>
-  </div>
+
   <Link to="/">Go back to the homepage</Link>
   </Layout>
   )
