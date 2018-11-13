@@ -743,6 +743,10 @@ hr {
   border-radius: 3px;
   transition: all .2s ease;
   float: left;
+  .gatsby-image-wrapper {
+    min-height: 200px;
+    max-height: 200px;
+  }
   @media (max-width: 767px){
     width: 100%;
   }
