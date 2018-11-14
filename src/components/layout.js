@@ -43,8 +43,7 @@ const Layout = ({ children }) => (
         {children}
         </Fade>
         </div>
-        <Footer>
-        </Footer>
+        <Footer/>
         </>
         )}
         />

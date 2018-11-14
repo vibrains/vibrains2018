@@ -1,3 +1,18 @@
 .footer {
-
+  .notice-container {
+    a {
+      font-size: 0.625rem;
+      color: $light;
+      vertical-align: bottom;
+      svg {
+        margin-right: 5px;
+      }
+    }
+    a.social-link {
+      margin-left: 1rem;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
 }
