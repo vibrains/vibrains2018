@@ -11,7 +11,6 @@
       font-size: 0.8rem;
       margin-bottom: 20px;
       line-height: 1rem;
-
       .avatar-image {
         border-radius: 50%;
         border: 1px solid $text;
@@ -19,27 +18,48 @@
         float: left;
         margin-right: 10px;
       }
-
       .post-author {
         padding-top: 7px;
         color: $pink;
         font-weight: 700;
       }
-
+      .post-date {
+        font-weight: 700;
+        span {
+          font-weight: 100;
+          font-style: italic;
+          font-size: 0.7rem;
+          float: right;
+        }
+      }
     }
-    .post-title {
+    .post-image {
       a {
+        text-decoration: none;
         color: $white;
         text-decoration: none;
         font-weight: 700;
         font-size: 1rem;
+        &:hover {
+          opacity: 0.8;
+        }
       }
-    }
-    small.read-more {
-      font-size: 0.8rem;
-      font-weight: 100;
-      a {
-        color: $light;
+      img {
+        border-radius: 3px;
+        box-shadow: 0 5px 20px 5px rgba(0,0,0,.2);
+      }
+      img.alt-img {
+        object-fit: cover;
+        object-position: 75% 75%;
+        min-width: 100%;
+        max-height: 119px;
+      }
+      .post-title {
+        font-size: 1rem;
+        p {
+          font-weight: 100;
+          font-size: 0.8rem;
+        }
       }
     }
   }

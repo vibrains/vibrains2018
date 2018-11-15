@@ -7,7 +7,6 @@ class Welcome extends Component {
 
       <div>
       <BlockRevealAnimation delay={0} duration={.6} color="#fff">
-
       <h1 className="headline">Web <a className="decorated" target="_blank" href="https://github.com/vibrains" rel="noopener noreferrer">developer</a> and <a className="decorated" href="https://www.behance.net/vibrains"
       target="_blank" rel="noopener noreferrer">designer</a></h1></BlockRevealAnimation><br />
 
