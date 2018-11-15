@@ -36,6 +36,12 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `civicactions`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

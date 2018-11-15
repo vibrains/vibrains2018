@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import BlockRevealAnimation from 'react-block-reveal-animation';
 
-class welcomeText extends Component {
+class Welcome extends Component {
   render() {
     return (
 
-      <div className="welcome-text">
+      <div>
       <BlockRevealAnimation delay={0} duration={.6} color="#fff">
 
       <h1 className="headline">Web <a className="decorated" target="_blank" href="https://github.com/vibrains" rel="noopener noreferrer">developer</a> and <a className="decorated" href="https://www.behance.net/vibrains"
@@ -24,4 +24,4 @@ class welcomeText extends Component {
   }
 }
 
-export default welcomeText;
+export default Welcome;

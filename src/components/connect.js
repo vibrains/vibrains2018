@@ -5,6 +5,7 @@ import '../styles/main.scss';
 class Connect extends Component {
   render() {
     return (
+      
       <div>
       <a className="social-link" href="https://github.com/vibrains" target="_blank" rel="noopener noreferrer"><FaGithub />Github</a>
       <a className="social-link" href="https://twitter.com/vibrains" target="_blank" rel="noopener noreferrer"><FaTwitter />Twitter</a>

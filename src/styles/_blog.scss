@@ -1,0 +1,46 @@
+.medium-posts-wrapper {
+  position: relative;
+  z-index: 5;
+  .medium-post-card {
+    position: relative;
+    z-index: 10;
+    .post-info {
+      color: $white;
+      display: block;
+      font-weight: 100;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+      line-height: 1rem;
+
+      .avatar-image {
+        border-radius: 50%;
+        border: 1px solid $text;
+        padding: 5px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .post-author {
+        padding-top: 7px;
+        color: $pink;
+        font-weight: 700;
+      }
+
+    }
+    .post-title {
+      a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+    }
+    small.read-more {
+      font-size: 0.8rem;
+      font-weight: 100;
+      a {
+        color: $light;
+      }
+    }
+  }
+}
