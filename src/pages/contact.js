@@ -79,7 +79,9 @@ export default class Index extends React.Component {
     <button className="button-pink is-link" type="submit">Send Message</button>
     </div>
     </form>
+    <p className="text-white">
     <FiCornerDownLeft/><Link to="/">Home</Link>
+    </p>
     </div>
     </Layout>
     );
