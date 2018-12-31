@@ -13,9 +13,7 @@ const Header = ({ siteTitle }) => (
   >
   <Link className="logo" to="/"></Link>
   <div className="navigation">
-  <Link className="menu-link" to="/about/">About</Link>
-  <Link className="menu-link" to="/snaps/">Snaps</Link>
-  <Link className="menu-link" to="/blog/">Blog</Link>
+  <Link className="menu-link" to="/notes/">Notes</Link>
   <Link className="menu-link" to="/contact/">Contact</Link>
   </div>
   <div className="solar">

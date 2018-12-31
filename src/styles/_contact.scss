@@ -1,4 +1,23 @@
+.content {
+  svg {
+    color: $white;
+    margin-right: 10px;
+    vertical-align: bottom;
+  }
+}
 form {
 	position: relative;
 	z-index: 5;
+  label {
+    color: $white;
+  }
+  input, textarea {
+    width: 50%;
+    border: none;
+    border: 1px solid $light;
+    border-radius: 3px;
+    padding: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
 }

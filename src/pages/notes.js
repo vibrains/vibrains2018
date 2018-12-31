@@ -46,7 +46,7 @@ const BlogPage = ({ data: { allMediumPost } }) => {
           <img className="alt-img" src={`https://source.unsplash.com/daily`} alt={edge.node.title} />
           )}
 
-          <div className="post-title">
+          <div className="text-white">
           {edge.node.title}
           <p>{edge.node.virtuals.subtitle} <FiExternalLink /></p>
           </div>

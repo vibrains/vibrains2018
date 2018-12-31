@@ -1,17 +1,15 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
-import Welcome from '../components/welcomeText';
 
 const IndexPage = (props) => (
+
   <Layout>
 
-  <div className="welcome-text">
-  <Welcome/>
-  </div>
-
   <div className="work-wrapper">
-  <h3 className="headline"><span role="img" aria-label="A man behind a computer screen, working in the field of technology.">👨‍💻</span> Web Work</h3>
+
+  <h3 className="headline"><span role="img" aria-label="A man behind a computer screen, working in the field of technology.">👨‍💻</span> Agency Work</h3>
+
   <div className="column">
   <a href="https://malonelaw.com" target="_blank" rel="noopener noreferrer">
   <Img fluid={props.data.malonelawThumb.childImageSharp.fluid} />
@@ -84,30 +82,11 @@ const IndexPage = (props) => (
 
 export default IndexPage
 
-export const imageQuery = graphql`
+export const workQuery = graphql`
 query {
-  imageOne: file(relativePath: { eq: "astro-header.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 2000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-  imageTwo: file(relativePath: { eq: "moon.jpg" }) {
-    childImageSharp {
-      fluid(maxWidth: 2000) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
   malonelawThumb: file(relativePath: { eq: "malonelaw-thumb-blue.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }
@@ -115,11 +94,6 @@ query {
   upontheroofThumb: file(relativePath: { eq: "upontheroof-thumb.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }
@@ -127,11 +101,6 @@ query {
   homebaseinspectorsThumb: file(relativePath: { eq: "homebaseinspectors-thumb.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }
@@ -139,11 +108,6 @@ query {
   cakesbyjaneThumb: file(relativePath: { eq: "cakesbyjane-thumb.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }
@@ -151,11 +115,6 @@ query {
   funnybusinessThumb: file(relativePath: { eq: "funnybusiness-thumb.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }
@@ -163,11 +122,6 @@ query {
   pisgahlegalThumb: file(relativePath: { eq: "pisgahlegal-thumb.jpg" }) {
     childImageSharp {
       fluid(duotone: { highlight: "#f00e2e", shadow: "#192550" }, toFormat: PNG) {
-        base64
-        aspectRatio
-        src
-        srcSet
-        sizes
         ...GatsbyImageSharpFluid
       }
     }

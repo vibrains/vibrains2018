@@ -21,21 +21,23 @@ margin: 15px;
 }
 `;
 
-const InstaPage = ({ data: { allInstaNode } }) => {
+const InstaPage = ({ data: { allInstagramContent } }) => {
   return (
 
     <Layout>
     <InstaWrapper className="insta-wrapper">
 
-    {allInstaNode.edges.map(edge => {
+    {allInstagramContent.edges.map(edge => {
       return (
         <InstaImage key={edge.node.id}>
         <div className="insta-likes">
-        <FiHeart/>{edge.node.likes}
+        <FiHeart/><span>{ edge.node.likes.count }</span>
         </div>
+        <a href={edge.node.link} target="_blank" rel="noopener noreferrer">
         <div className="insta-image">
-        <img src={edge.node.image.image.original.src} />
+        <img src={ edge.node.localImage.childImageSharp.fluid.srcWebp } alt={ edge.node.id } />
         </div>
+        </a>
         </InstaImage>
         );
     })}
@@ -49,22 +51,41 @@ export default InstaPage;
 
 export const query = graphql`
 query InstaQuery {
-  allInstaNode {
+  allInstagramContent {
     edges {
       node {
         id
-        likes
-        image: localFile {
-          image: childImageSharp {
-            original {
-              width
-              height
-              src
-            }
+        link
+        likes {
+          count
+        }
+        caption {
+          id
+          text
+          from {
+            username
           }
+        }
+        localImage {
+          id
+          childImageSharp {
+            fluid(toFormat: PNG) {
+             ...GatsbyImageSharpFluid_withWebp
+           }
+         }
+       }
+       images {
+        standard_resolution {
+          width
+          height
+          url
+        }
+        low_resolution {
+          url
         }
       }
     }
   }
+}
 }
 `;

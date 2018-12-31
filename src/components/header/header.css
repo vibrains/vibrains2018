@@ -1,0 +1,43 @@
+.navigation {
+  background: #ffffff;
+}
+.header-wrapper {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.navigation {
+  float: right;
+  @media (max-width: 768px) {
+    padding-top: 15px;
+  }
+}
+
+.menu-link {
+  margin: 10px;
+  position: relative;
+  z-index: 5;
+  font-weight: 900;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  z-index: 5;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-left: 0;
+  background: url("../../images/svg/logo_w.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.solar-syst {
+  right: 20vh;
+  float: left;
+  display: block;
+  top: 8vh;
+}

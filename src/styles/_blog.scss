@@ -34,16 +34,6 @@
       }
     }
     .post-image {
-      a {
-        text-decoration: none;
-        color: $white;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1rem;
-        &:hover {
-          opacity: 0.8;
-        }
-      }
       img {
         border-radius: 3px;
         box-shadow: 0 5px 20px 5px rgba(0,0,0,.2);

@@ -1,0 +1,20 @@
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: inherit;
+  font-size: 100%;
+  padding: .5em 1em;
+  text-decoration: none;
+  border-radius: 2px;
+  background: transparent;
+  color: $white;
+  font-weight: 700;
+}
+.button-pink {
+  background: $pink;
+}
+.button-purple {
+  background: $purple;
+}
