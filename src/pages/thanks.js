@@ -10,7 +10,7 @@ export default () => (
   <div className="content">
   <h1 className="text-white">Thank you!</h1>
   <p className="text-white">I will reach back as soon as possible.</p>
-  <p>
+  <p className="text-white">
   <FiCornerDownLeft/><Link to="/">Home</Link>  
   </p>
   </div>
