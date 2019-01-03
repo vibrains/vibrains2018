@@ -2,11 +2,15 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-
 .navigation {
   float: right;
   @media (max-width: 768px) {
     padding-top: 15px;
+  }
+  a:active,
+  a:hover {
+    outline-width: 0;
+    color: $pink;
   }
 }
 

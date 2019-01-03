@@ -4,11 +4,6 @@ a {
   text-decoration: underline;
   color: $white;
 }
-a:active,
-a:hover {
-  outline-width: 0;
-  color: $pink;
-}
 a.decorated {
   border-bottom: 2px solid $pink;
   color: #fff;

@@ -12,8 +12,15 @@
       font-size: 1rem;
     }
   }
+  hr {
+    margin: 10px 0;
+    padding: 0;
+    background: $light;
+    border: none;
+    height: 1px;
+    opacity: 0.1;
+  }
 }
-
 .work-wrapper {
   position: relative;
   z-index: 5;
