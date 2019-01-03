@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <footer className="footer" style={{
         margin: '0 auto',
-        padding: '1rem 1.0875rem',
+        padding: '1rem 0',
         maxWidth: '1170px'
       }}>
       <div className="notice-container">

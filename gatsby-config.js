@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'vibrains',
+    title: 'Vibrains - Web Developer / Designer',
     siteUrl: `https://vibrains.com`,
   },
   plugins: [
