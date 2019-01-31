@@ -15,7 +15,7 @@ class Footer extends Component {
       <Connect/>
       <h4>
       <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Site built with Gatsby
-      </a>
+      </a>&nbsp;&nbsp;<a href="https://github.com/vibrains/vibrains2018/" target="_blank" rel="noopener noreferrer">Source code on Github</a>
       </h4>
       </div>
       </footer>

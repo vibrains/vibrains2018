@@ -5,7 +5,6 @@ import favicon16 from "../images/favicon16.png"
 import favicon32 from "../images/favicon32.png"
 import favicon64 from "../images/favicon.png"
 import { StaticQuery, graphql } from 'gatsby';
-import Welcome from '../components/welcomeText';
 import Footer from '../components/footer';
 import Fade from 'react-reveal/Fade';
 import Header from './header'
@@ -50,10 +49,7 @@ const Layout = ({ children }) => (
             zIndex: 5,
           }}
           >
-          <div className="welcome-text">
-          <Welcome/>
-          </div>
-          <Fade delay={500}>
+          <Fade delay={0}>
           {children}
           <Footer/>
           </Fade>
